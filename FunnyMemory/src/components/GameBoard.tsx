@@ -20,6 +20,7 @@ import Questions from "./Questions";
 import InfoModal from "./uielements/InfoModal";
 import ShowImage from "./ShowImage";
 import FinalRecognitionPhase from "./FinalRecognitionPhase";
+import { STIMULUS_SET_VERSION } from "./DataForEachMonth/stimulusData";
 
 const GameBoard = ({ ...props }: any) => {
   const [showModalInfo, setShowModalInfo] = useState(false);
@@ -83,6 +84,7 @@ const GameBoard = ({ ...props }: any) => {
         static_data: Object.assign(staticdata ?? {}, {
           image_exposure_time: imageExposureTime,
           image_set_shown: getMonthIndex(),
+          stimulus_set_version: STIMULUS_SET_VERSION,
           learning_trials: numberOfTrials,
           delay_time: delayBeforeRecall,
           timeTakenForTrial: isTimestamp(timeTakenForTrial)
@@ -119,6 +121,7 @@ const GameBoard = ({ ...props }: any) => {
         static_data: Object.assign(staticdata ?? {}, {
           image_exposure_time: imageExposureTime,
           image_set_shown: getMonthIndex(),
+          stimulus_set_version: STIMULUS_SET_VERSION,
           learning_trials: numberOfTrials,
           delay_time: delayBeforeRecall,
           timeTakenForTrial: isTimestamp(timeTakenForTrial)
@@ -221,6 +224,7 @@ const GameBoard = ({ ...props }: any) => {
           image_exposure_time: imageExposureTime,
           learning_trials: numberOfTrials,
           image_set_shown: getMonthIndex(),
+          stimulus_set_version: STIMULUS_SET_VERSION,
           delay_time: delayBeforeRecall,
           timeTakenForTrial: timeTakenForTrial,
           timeTakenForRecall: timeTakenForRecall,
