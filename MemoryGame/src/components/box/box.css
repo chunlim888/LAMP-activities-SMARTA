@@ -108,6 +108,10 @@ svg.svg-inline--fa.fa-arrow-left.fa-w-14 {
   width: 100% !important;
   height: 126px !important;
 }
+.memory-stimulus-image {
+  object-fit: contain;
+  background-color: white;
+}
 .box-green {
   height: 100%;
   width: 100%;
